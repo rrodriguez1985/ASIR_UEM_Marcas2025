@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducción HTML</title>
 </head>
-<body>
+<body bgcolor="coral">
     <h1>Definición de Página Web</h1>
     <ul>
         <li>Una pagina web, lo podemos definir como un documento de texto con marcas o etiquetas.</li>
@@ -65,5 +65,88 @@
     <img src="img/estructuraHTML.png" alt="" width="500px">
     <br>
     <img src="img/docuHTML.png" alt="" width="500px">
+    <hr>
+    <h1>Titulos en HTML</h1>
+    En HTML, podemos establecer o usar 6 niveles de titulos. Los títulos van estructurados desd el H1 hasta la H6, siendo el H1 el más grande y el H6 el de menor tamaño.
+    <h1>Este es un título de h1 o primer nivel</h1>
+    <h2>Este es un título de h2 o segundo nivel</h2>
+    <h3>Este es un título de h3 o tercer nivel</h3>
+    <h4>Este es un título de h4 o cuarto nivel</h4>
+    <h5>Este es un título de h5 o quinto nivel</h5>
+    <h6>Este es un título de h6 o sexto nivel</h6>
+    <hr>
+    <h1>Insertar Textos en HTML</h1>
+    Para poder poder insertar textos en nuestros documentos HTML, lo podemos hacer de las siguientes maneras:
+    <ul>
+        <li>Escribiendo directamente dentro de las etiquetas de apertura y cierre del body</li>
+        <li>Podemos utilizar saltos de párrafo. Para ello utilizaremos la etiqueta de apertura y cierre p.</li>
+        <li>Podemos utilizar saltos de línea. Para ello utilizaremos la monoetiqueta br</li>
+        <li>Podemos utilizar un elemento contenedor como puede ser un div.</li>
+    </ul>
+    <p>
+        Esto es un ejemplo de salto de párrafo en HTML
+    </p>
+    <br>Esto es un salto de línea.
+    <br>Esto es otro salto de línea.
+    <p>
+        A parte de poder insertar texto en nuestro HTML, podemos utilizar un elemento de separación para establecer espacios o secciones dentro de un documento que facilite su visualización.
+        <br> Este elemento es conocido como hr.
+        <br>hr es una monoetiqueta que representa un línea horizontal de separación entre secciones o partes de un documento HTML.
+        <br> Para poder modificar o "customizar" la etiqueta hr, podemos utilizar los atributos size (para dar tamaño de grosor), width (anchura) y color (para dar color al elemento.).
+        <br>Esto es un ejemplo de texto separado por un hr.
+        <hr width="500px" size="10px" color="violet">
+        <br>Esto es otro ejemplo de texto separado por un hr.
+    </p>
+    <hr>
+    <h1>Textos Preformateados</h1>
+    Los textos preformateados, son textos que podemos insertar en HTML con las características que nosotros queramos.
+    <br>Es decir, podemos escribir el texto de manera que se visualice tal y como lo hemos escrito  en el body.
+    <pre>
+        Hola                            esto es               mensaje
+                de texto con                        pre
+
+                                en HTML.
+    
+
+        <code>
+            function diHola(){
+                console.log("Hola alumnxs de 1º ASIR de Villaviciosa");
+                alert("Bienvenidos a la materia de Lenguaje de Marcas!!!!");
+            }
+        </code>
+    </pre>
+    <hr>
+    <h1>Formatear Textos</h1>
+    <ul>
+        <li>Etiqueta b: sirve para poder poner texto en <b>negrita</b></li>
+        <li>Etiqueta i: sirve para poder poner texto en <i>cursiva</i></li>
+        <li>Etiqueta del: sirve para <del>tachar</del> texto</li>
+        <li>Etiqueta em: sirve para dar <em>énfasis</em> a un texto. Similar a i.</li>
+        <li>Etiqueta small: sirve para poner un texto en <small>pequeño</small></li>
+        <li>Etiqueta sup: Es una etiqueta superíndice. Eje: X<sup>2</sup></li>
+        <li>Etiqueta sub: Es una etiqueta subíndice. Eje: H<sub>2</sub>O</li>
+        <li>Etiqueta mark: Es una etiqueta que sirve para <mark>subrayar texto</mark></li>
+        <li>Etiqueta q: sirve para poner <q>citas pequeñas de texto</q></li>
+        <li>Etiqueta cite: sirve para poner <cite>Títulos de trabajos</cite></li>
+        <li>Etiqueta address: Sirve para poner una dirección. <address>Calle Tajo S/N.</address></li>
+    </ul>
+    <h1>Etiquetas que ya no se utilizan en HTML5</h1>
+    Con la llegada de HTML5, algunas etiquetas que hasta entonces utilizábamos para poder dar apariencia y formate en nuestras webs, ahora quedan en deshuso.
+    <br> A partir de ahora, todo aquello que vaya relacionadocon apariencia (color, tipografías, alineación, tamaños, etc.), lo haremos con la etiquetas y reglas establecidas en CSS.
+    <br>Para poder cambiar tamaños, tipografías y color en HTML, utilizaremos la etiqueta <b>font</b>
+    <br>A parte de la etiqueta de apertura y cierre font, utilizaremos los siguientes atributos:
+    <ul>
+        <li><b>face</b>: sirve para cambiar el tipo de texto. Ejemplo: Arial, TimeNewRoman, Verdana, etc.</li>
+        <li><b>color</b>: sirve para establecer un color en el texto</li>
+        <li><b>size</b>: sirve para dar un tamaño al texto. Siempre en px (Pixels)</li>
+    </ul>
+    <p><font face="Verdana" size="20px" color="blue">
+        Esto es un salto de párrafo aplicando color, tamaño y tipografía en HTML
+    </font></p>
+    <h3 align="right"><font color="green">Esto es un título alineado a la derecha</font></h3>
+    <h3 align="left"><font face="Arial">Esto es un título alineado a la izquierda</font></h3>
+    <h3 align="center"><font size="22px">Esto es un título alineado a la centro</font></h3>
+    <h3 align="justify"><font color="red">Esto es un título alineado a la justificado</font></h3>
+
 </body>
 </html>
