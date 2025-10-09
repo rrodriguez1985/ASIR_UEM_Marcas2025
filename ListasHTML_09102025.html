@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas en HTML5</title>
+</head>
+<body>
+    <h1>Listas en HTML5</h1>
+    <div>
+        En HTML5, disponemos de tres tipos de listas que nos van a permitir organizar texto para darle
+        <br> un formato más conciso y claro.
+        <br>Los tipos de listas que podemos utilizar, son los siguientes:
+        <ul>
+            <li><b>Listas Ordenadas (ol)</b>:Son listas ordenadas, y van numeradas en orden.
+                <br>La nomenclatura ol, vienen de Ordered List.
+            </li>
+            <li><b>Listas DesOrdenadas (ul)</b>:Son listas desordenadas,es decir, no van en orden.
+                <br>La nomenclatura ul, viene de UnOrdered List.
+            </li>
+            <li><b>Listas de Definición (dl)</b>: Son listas de definición.
+                <br>Las siglas dl, vienen dadas por Definition List.
+            </li>
+        </ul>
+    </div>
+    <div>
+        Dentro de un elemento lista, sea del tipo que sea, podemos insertar cualquier tipo de información:
+        <br>texto, imágenes, vídeos, tablas, audios, etc.
+        <br>Por lo tanto, se pueden combinar listas ordenadas con desordenadas, y viceversa.
+    </div>
+    <hr>
+    <h2>Listas Ordenadas (ol)</h2>
+    <div>
+        La estructura de una lista ordenada (ol) es la siguiente:
+        <ul>
+            <li>La lista está formada por la etiqueta de apertura y cierre <b>ol</b></li>
+            <li>
+                Internamente, dispondrá de una etiqueta <b>li</b>, en la que pondremos los elementos a listas.
+                <br>Es decir, el contenido de nuestra lista.
+            </li>
+            <li>
+                La etiqueta li, irá siempre tanto en listas ordenadas como desordenadas, porque son parte de su estructura.
+            </li>
+        </ul>
+    </div>
+    <div>
+        Ejemplo de Lista Ordenada
+        <ol>
+            <li>Seat Toledo</li>
+            <li>Audi A3</li>
+            <li>Toyota RAV4</li>
+            <li>VW Golf</li>
+            <li>Citroen Xsara</li>
+        </ol>
+    </div>
+    <h2>Listas Desordenadas (ul)</h2>
+    <div>
+        La estructura de una lista desordenada (ul) es la siguiente:
+        <ul>
+            <li>La lista está formada por la etiqueta de apertura y cierre <b>ul</b></li>
+            <li>
+                Internamente, dispondrá de una etiqueta <b>li</b>, en la que pondremos los elementos a listas.
+                <br>Es decir, el contenido de nuestra lista.
+            </li>
+            <li>
+                La etiqueta li, irá siempre tanto en listas ordenadas como desordenadas, porque son parte de su estructura.
+            </li>
+        </ul>
+    </div>
+    <div>
+        Ejemplo de Lista Desordenada
+        <ul>
+            <li>Windows 11</li>
+            <li>Kali Linux</li>
+            <li>Ubuntu 24.04</li>
+            <li>Linux Mint</li>
+            <li>Red Hat Linux</li>
+        </ul>
+    </div>
+    <hr>
+    <h2>Formateado de Listas Ordenadas y Desordenadas</h2>
+    <div>
+        HTML5, nos permite en cierta medida,poder customizar las listas a través de una serie de atributos 
+        <br>básicos como el atributo <b>start</b> y el atributo <b>type</b>.
+        <br>Con estos atributos, podemos cambiar el orden del comienzo de las listas ordenadas,
+        <br> y el tipo de icóno (es decir, podemos cambiar letas, números normales o romanos, etc.)
+        <br>En el cado de las listas desordenadas, podemos poner icónos circulares (circle),
+        <br> discos (disc) y cuadrados (square).
+    </div>
+    <h3>Ejemplo de Listas Ordenadas Aplicando Atributos type y start</h3>
+    <ol start="5" type="a">
+        <li>Podemos poner letras mayúscias (A)</li>
+        <li>Podemos poner letas en mínuscula (a)</li>
+        <li>Podemos poner cifras romanas en mayúsculas y minúsculas (i I, ii II,iii III, iv IV...n)</li>
+        <li>Podemos poner números normales (1,2,3,4,5...n)</li>
+        <li>Podemos indicar en qué posición queremos que comiencen. Utilizamos para ello el atributo <b>start</b></li>
+    </ol>
+    <h3>Ejemplo de Listas Desordenadas Aplicando Atributos type</h3>
+    <ul type="square">
+        <li>Podemos utilizar el tipo disc (viñeta redonda rellena)</li>
+        <li>Podemos utilizar el tipo circle (viñeta redonda hueca)</li>
+        <li>Podemos utilizar el tipo square (viñeta cuadrada)</li>
+    </ul>
+    <hr>
+    <h3>Listas de Definición en HTML5 (dl)</h3>
+    <div>
+        Las listas de definición, tienen una estructura totalmente distinta a las anteriores vistas.
+        <br>Tienen en este caso, la siguiente estructura:
+        <ul>
+            <li>La etiqueta <b>dl</b>: Description List. Delimitar la lista completa</li>
+            <li>La etiqueta <b>dt</b>: Description Term. Delimitar el término de la lista</li>
+            <li>La etiqueta <b>dd</b>: Definition Description. Delimita la definición del término</li>
+        </ul>
+    </div>
+    <h3>Ejemplo de Lista de Definición</h3>
+    <dl><!--Indicar que vamos a utilizar una lista de definición-->
+        <dt><b>dl</b></dt><!--Término a definir-->
+            <dd><!--Definición del término-->
+                Crear la caja que contiene los items de la lista
+            </dd>
+        <dt><b>dt</b></dt>
+            <dd>Es el item que contiene un término a definir.</dd>
+        <dt><b>dd</b></dt>
+            <dd>Es el item que contiene la definición.</dd>
+    </dl>
+    <h2>Listas Anidadas en HTML5</h2>
+    <div>
+        En HTML, podemos anidar diferentes tipos de listas combinando de esta manera listas ordenadas con listas desordenadas, y viceversa.
+        <br>Suelen emplearse listas anidadas de hasta un 3er nivel.
+    </div>
+    <br>Ejemplo de Lista Anidada:
+    <ul>CFGS DAM/DAW
+        <li>
+            <ol>Lenguaje de Marcas
+                <li>1º Trimestre
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JS</li>
+                    </ul>
+                </li>
+                <li>2º Trimestre
+                    <ul>
+                        <li>FlexBox</li>
+                        <li>CSS Grid</li>
+                        <li>Responsive</li>
+                    </ul>
+                </li>
+                <li>3º Trimestre
+                    <ul>
+                        <li>XML</li>
+                        <li>PHP</li>
+                        <li>Git</li>
+                    </ul>
+                </li>
+                <li>Mayo
+                    <ul>
+                        <li>Proyecto Web</li>
+                        <li>FCCE</li>
+                        <li>Recuperación</li>
+                    </ul>
+                </li>
+                <li>Junio
+                    <ul>
+                        <li>Recuperación</li>
+                        <li>Vacaciones</li>
+                        <li>Sonrisas y Lagrimas</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <ol>ISO
+                <li>Trimestre 1
+                    <ul>
+                        <li>Algoritmos de Planificación</li>
+                    </ul>
+                </li>
+                <li>Trimestre 2
+                    <ul>
+                        <li>MSDOS y Windows</li>
+                        <li>Linux</li>
+                        <li>Seguridad</li>
+                    </ul>
+                </li>
+                <li>Trimestre 3
+                    <ul>
+                        <li>Analisis Forense</li>
+                        <li>Criptografía</li>
+                        <li>Hacking Ético</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>
