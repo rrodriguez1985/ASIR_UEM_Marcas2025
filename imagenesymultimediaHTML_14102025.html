@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes y Multimedia</title>
+</head>
+<body>
+    <h1>Imágenes en HTML5</h1>
+    <div>
+        En la informática, podemos distinguir entre dos tipos de imágenes:
+        <ul>
+            <li>
+                <b>Imágenes de mapa de bits:</b> estás están formadas por puntos de colores.
+                <br>Por ejemplo: imágenes de videojuegos de 8bits (maribros, imágenes de pixel, etc.)
+            </li>
+            <li>
+                 <b>Imágenes vectoriales: son imágenes que están formadas por formas geométricas.</b>
+            </li>
+        </ul>
+        <br><img src="img/bitsvsvectorial.png" alt="" width="400px" height="300px">
+    
+        <h3>Ventajas y Desventajas de Imágenes Vectoriales (SVG)</h3>
+        <ul>
+            <li>Ventaja:Las imágenes vectoriales, ocupan muy poco espacio.
+                <br>Además, se pueden ampliar a cualquier escala o tamaño, 
+                <br> y al hacerlo, nunca se pierde la calidad de la imagen.
+            </li>
+            <li>Desventaja: NO permiten representar imágenes sin
+                <br>formas definidas.
+                <br>Ejemplo: Una foto de un retrato o teléfono móvil.
+            </li>
+        </ul>
+        <h3>Ventajas y Desventajas de Imágenes de Mapa de Bits (bmp)</h3>
+        <ul>
+            <li>Ventaja:Sí permiten representar imágenes sin formas definidas.
+                <br>Por ejemplo: una foto de un móvil/camara o un retrato
+            </li>
+            <li>Desventaja:Las fotos si las "estiramos/ampliamos" pierden
+                <br> mucha calidad, es decir, se "pixelan", y además, son
+                <br> un tipo de imágenes que suelen ocupar mucho espacio en el
+                <br> disco duro.
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Formatos de Fotos / Imágenes</h3>
+        <ul>
+            <li>
+                <b>JPG o JPEG:</b>Son adecuadas para fotos.
+                <br>Tienen una comprensión con pérdidas pero conservan
+                <br> el color original.
+            </li>
+            <li>
+                <b>GIF:</b> Son adecuados para dibujos.
+                <br> No tienen pérdidas de calidad, pero 
+                <br>tiene derechos de autor.
+            </li>
+            <li>
+                <b>PNG:</b> Son adecuados para el uso general.
+                <br>No tienen pérdidas (es decir, no pierden calidad
+                <br>al ser ampliados).
+                <br>Las fotos se convierten a este tipo de formato
+                <br> y no permiten animaciones.
+                <br>Su principal característica es que tienen transparencias.
+            </li>
+            <li>
+                <b>WEBP:</b> Este tipo de formato es el más adecuado para el uso
+                <br> de páginas web. Su principal característica es que tienen
+                <br> la misma calidad que las fotos JPEG/JPG junto con la calidad
+                de comprensión de las fotos en formato PNG.
+                <br>Hoy en día, son el tipo de formato más utilizado en los Servidores web
+                <br> para representar imágenes.
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2>Insertar imágenes en HTML5</h2>
+        <div>
+            Para poder insertar imágenes de HTML5 en una página web,
+            <br> tendremos que utilizar la siguiente estructura:
+            <ul>
+                <li>
+                    <b>img:</b> La etiqueta img, es una monoetiqueta,
+                    <br>que utilizaremos para poder insertar Imágenes
+                    <br> en nuestra web.
+                </li>
+                <li>
+                    <b>Atributo src:</b> El atributo src (source),
+                    <br> nos ayudará a localizar la imágen que queremos 
+                    <br> insertar.
+                    <br> Ejemplo: img src="img/foto.jpg"
+                </li>
+                <li>
+                    <b>Link de la dirección:</b> Es la ubicación de nuestra
+                    <br> imagen con el formato (extensión) que tiene.
+                    <br> Ejemplo: foto.jpg, foto.jpeg, foto.png, foto.webp,
+                    <br> foto.svg...
+                </li>
+            </ul>
+            <br>
+            <img src="img/rickandmorty.png" alt="Aquí va la imagen de Rick and Morty" width="500px" height="400px" title="Hola amigxs de ASIR, esto es un comentario en una imagen con title">
+        </div>
+        <br>
+        <h3>Atributos asociados a las imágenes / fotos en HTML5</h3>
+        <ul>
+            <li>
+                <b>src:</b> indica la dirección (URI) de acceso a la imagen.
+            </li>
+            <li><b>alt:</b>sirve para indicar un breve texto en caso
+                <br> de que la imagen falle
+            </li>
+            <li>
+                <b>longdesc:</b> indica si es una URI de una descripción de
+                <br> una foto o imágen en caso de tener asociado un mapa de
+                <br> imágenes. Es decir, sirve para describir imágenes.
+            </li>
+            <li>
+                <b>height y width:</b>sirven para dar valor de altura y anchura
+                <br> a nuestras imágenes. Suelen venir dadas en px (pixel)
+            </li>
+            <li>
+                <b>usemap:</b> sirve para asociar a la imagen un mapa de 
+                <br>imágenes (como un marcador)
+            </li>
+            <li>
+                <b>ismap:</b>sirve para definir un mapa de imágenes
+            </li>
+            <li>
+                <b>title:</b> a forma de tip, muestra información en un 
+                <br> cuadradito amarillo de la imagen cuando pasamos el ratón
+                <br>por encima.
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2>Figure en HTML5</h2>
+        La etiqueta figure en HTML5, permite asociar un texto con una imagen.
+        <br>Su estructura es la siguiente:
+        <ul>
+            <li>
+                <b>figure:</b> es la etiqueta padre. Es decir, 
+                <br>el resto de etiquetas dependerán o caerán de esta.
+            </li>
+            <li>
+                <b>img:</b>es una etiqueta para insertar imágenes
+            </li>
+            <li>
+                <b>figcaption:</b> es una etiqueta que contendrá el 
+                <br>texto asociado a la imagen.
+            </li>
+        </ul>
+        <br>
+        <figure>
+            <img src="img/logo.jpg" alt="">
+            <figcaption>Iconos de Lenguaje de Marcas</figcaption>
+        </figure>
+        <h2>Insertar vídeos de Youtube u otra plataforma.</h2>
+        Para poder insertar un video de Youtube u otra plataforma, 
+        <br> utilizaremos la etiqueta que viene asociada a estas
+        <br>como puede ser iframe.
+        <br><iframe width="853" height="480" src="https://www.youtube.com/embed/vlCXdvcgiE0" title="Aprende Git en 15 Minutos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>Para poder insertar un vídeo que está en local (propio pc o servidor)
+        <br> utilizaremos la etiqueta video.
+        <br><video src="multimedia/video.mp4" width="500px" height="500px" controls poster="img/favicon.png"></video>
+        <br>Para insertar un audio en una página web, utilizremos la etiqueta audio.
+        <br><audio src="multimedia/audio.mp3" controls></audio>
+        <h4>Atributos que podemos usar tanto en audio como en vídeo.</h4>
+        <ul>
+            <li>
+                <b>src:</b>sirve para definir la url del audio o video
+            </li>
+            <li>
+                <b>preload:</b> es usado para almacenar vídeos o audios de gran
+                <br>tamaño temporalmente (buffering)
+                <ul>
+                    <li>none: no almacena nada temporalmente</li>
+                    <li>auto: almacena datos multimedia temporalmente</li>
+                    <li>metadata: almacena temporalmente sólo los metadatos del archivo.</li>
+                </ul>
+            </li>
+            <li>
+                <b>mediagroup:</b> sirve para realizar una agrupación multimedia.
+            </li>
+            <li>
+                <b>autoplay:</b> reproduce desde el inicio.
+            </li>
+            <li><b>loop</b>: reproduce en bucle</li>
+            <li><b>muted:</b>silenciado de audio</li>
+            <li><b>controls:</b>muestra los controles del reproductor.</li>
+            <li><b>width y height:</b>son para dar anchura y altura al vídeo</li>
+            <li><b>poster:</b>sirve para poner poner una foto previa al vídeo.</li>
+        </ul>
+    </div>
+</body>
+</html>
