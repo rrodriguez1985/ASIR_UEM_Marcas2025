@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas HTML</title>
+</head>
+<body>
+    <h1>Tablas en HTML</h1>
+    <div>
+        Una tabla en HTML, es un conjunto de celdas donde podemos alojar contenidos
+        <br> tales como: texto, imágenes, vídeos, audios, tablas, formularios, etc.
+        <br>Antiguamente, era un elemento fundamental para la creación de páginas web.
+        <br>Era un elemento que utilizábamos por lo tanto, para poder maquetar nuestras
+        <br>páginas webs con el contenido que queríamos.
+        <br>Con la llegada de HTML5, se empezó a utilizar etiquetas semánticas(aside, nav,
+        <br>header, etc) y contenedores (divs), que nos permiten tener una mayor flexibilidad
+        <br> y adaptar nuestras páginas webs de manera mucho más dinámica y visualmente mucho
+        <br> más atractivas.
+    </div>
+    <div>
+        Las características o estructura principal que forma una tabla son los siguientes elementos:
+        <ul>
+            <li><b>table</b>: con esta etiqueta, definimos que vamos a utilizar 
+                <br>una tabla
+            </li>
+            <li><b>tr</b>: sirve para definir las filas de una tabla</li>
+            <li><b>td</b>: sirve para definir las celdas de una tabla</li>
+        </ul>
+        <br>
+        <table border="1px">
+            <tr>
+                <td>Nombre</td>
+                <td>Apellido</td>
+            </tr>
+            <tr>
+                <td>Raúl</td>
+                <td>Rodríguez</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Propiedades de las tablas</h2>
+        <ul>
+            <li><b>table</b>: inicio y fin de una tabla</li>
+            <li><b>tr</b>: para definir el número de filas de las tablas</li>
+            <li><b>td</b>: para definir el número de celdas de las tablas</li>
+            <li><b>caption</b>: es para poner un título encima o debajo de una tabla</li>
+            <li><b>alinear caption</b>: Utilizamos el atributo <b>align</b> con <b>top</b> o <b>bottom</b></li>
+            <li><b>thead</b>: se utiliza para definir la cabecera de una tabla</li>
+            <li><b>th</b>: Define una celda de tipo cabecera en la tabla</li>
+            <li><b>tbody</b>: Define el cuerpo de una tabla</li>
+            <li><b>tfoot</b>: Define el pie de una tabla</li>
+        </ul>
+        <table border="1px">
+            <caption align="bottom">Listado de SSOO para ISO</caption>
+            <tr>
+                <th>Sistema Operativo</th>
+                <th>Fabricante</th>
+                <th>Tipo de Licencia</th>
+            </tr>
+            <tr>
+                <td>Ubuntu 24.04</td>
+                <td>Linux-Debian</td>
+                <td>Software Libre</td>
+            </tr>
+            <tr>
+                <td>Windows 7</td>
+                <td>Microsoft</td>
+                <td>Propietario / Pago</td>
+            </tr>
+            <tr>
+                <td>Kali Linux</td>
+                <td>Linux-Debian</td>
+                <td>Software Libre</td>
+            </tr>
+            <tr>
+                <td>Red Hat</td>
+                <td>Fedora-Linux</td>
+                <td>Software Gratuito / Pago de Soporte</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Atibutos para tr y td: combinación de celdas</h2>
+        En las tablas, podemos combinar celdas con el fin de poder establecer una estructura personalizada
+        <br>con nuestro contenido.
+        <br>Para ello, utilizaremos los atributos <b>rowspan</b> y <b>colspan</b> que aplicaremos en nuestras 
+        <br> celdas y filas, y que nos permitirá visualmente realizar combinaciones de celdas.
+        <ul>
+            <li><b>rowspan</b>: indica el número de columna que ocupa cada celda, es decir, combinación de columnas.</li>
+            <li><b>colspan</b>: indica el númoer de fila que ocupa cada celda, es decir, combinación de filas</li>
+        </ul>
+        <br>
+        <h4>Ejemplo de tabla combinada</h4>
+        <table border="1px" width="300px" height="400px">
+            <!-- primera fila -->
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td rowspan="3">C</td>
+                <td>D</td>
+            </tr>
+            <!-- segunda fila -->
+            <tr>
+                <td rowspan="2">E</td>
+                <td>F</td>
+                <!-- <td>b</td> -->
+                <td rowspan="2">G</td>
+            </tr>
+            <!-- tercera fila -->
+            <tr>
+                <td bgcolor="green"><font size="14px" color="white" family="Arial">H</font></td>
+                <!-- <td>c</td>
+                <td>c</td>
+                <td>c</td> -->
+            </tr>
+            <!-- cuarta fila -->
+            <tr>
+                <td align="center" bgcolor="darkred"><img src="img/favicon.png" alt="" width="50px" height="50px"></td>
+                <td>J</td>
+                <td colspan="2">K</td>
+                <!-- <td>d</td> -->
+            </tr>
+        </table>
+    </div>
+</body>
+</html> 
