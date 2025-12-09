@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Externo-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS Interno -->
+    <style>
+        h1{
+            color:blue;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 42px;
+            text-align: center;
+            /*Esto es un comentario de una línea*/
+        }
+    </style>
+
+    <title>Introducción a CSS</title>
+</head>
+<body>
+    <h1>Introducción a CSS</h1>
+    Cuando hablamos de CSS, nos estamos refiriendo a Cascading Style Sheet.
+    <br>Estas siglas, significan exactamente "Hojas de Estilo en Cascada"
+    <br>En las primeras versiones de HTML, el código fuente de una página web tenía 
+    <br>tanto la información del contenido como de la forma / apariencia en la que se
+    <br>representa.
+    <br>Hoy en día, estos dos aspectos van separados. Es decir:
+    <ul>
+        <li>Por un lado tenemos el contenido: imágenes, tablas, vídeos, texto, etc.</li>
+        <li>Por otro lado, indicamos cómo va a ser ese contenido: tamaño de texto,
+            <br>tamaño de imágenes, alienaciones, colores, tipografías, etc.
+        </li>
+    </ul>
+    <br>En conclusión, por un lado tendremos nuestro archivo HTML, y por otro lado, tendremos
+    <br>el archivo CSS o la apariencia que le queremos aplicar a nuestra página web.
+    <br><img src="img/css.png" alt="" width="600px" height="400px">
+    <br>En conclusión: HTML define el contenido y estructura de nuestra web.
+    <br>Y CSS, define cómo será nuestra web, es decir, la apariencia.
+    <h3>Funcionamiento de CSS</h3>
+    El funcionamiento de las hojas de estilo es el siguiente:
+    <ul>
+        <li>En las páginas web (archivos .html) se escriben etiquetas que definen
+            <br> las categorías o elementos del contenido.
+        </li>
+        <li>En las hojas de estilo (archivos .css) se escribe cómo queremos que sea
+            <br> el estilo de presentación de estas etiqeutas o categorías: fuentes,
+            <br> bordes de imágenes y/o tablas, posición en la web (centrada, izq. der, etc)...
+        </li>
+        <li>En la página web se escribe qué hoja de estilo queremos utilizar.</li>
+    </ul>
+    <br>En conclusión, podemos resumir el funcionamiento de CSS en los siguientes puntos clave:
+    <ul>
+        <li>Las hojas de estilo en cascada (CSS), son complementos a las etiquetas
+            <br>HTML, y lo que permiten es mejorar su presentación y aspecto.
+        </li>
+        <li>Los CSS separan el contenido del documento de todo el aspecto de la presentación de este.</li>
+        <li>Intentar en la medida de lo posible, utilizar muchas tablas en las páginas web.
+            <br>Hoy en día, se utilizan más div o etiquetas semánticas predefindidas que tablas
+            <br> a la hora de hacer páginas web responsive (adaptablas a distintos formatos de
+            pantallas)
+        </li>
+        <li>No se indica en el código HTML el estilo del documento, sino que se indica lo que es cada
+            <br>elemento y dicho formato se especifica en el CSS
+        </li>
+        <li>Todas estas especificaciones están recogidas en HTML5 y se utilizarán a partir de ahora como 
+            <br>estandarización a la hora de realizar nuestras páginas web.
+        </li>
+    </ul>
+    <hr>
+    <h3>Versiones de CSS y cosas a tener en cuenta</h3>
+    Lo que tenemos que tener en cuenta a la hora de crear nuestras páginas web y sobre todo de usar CSS,
+    <br> es que NO TODOS LOS NAVEGADORES WEB SOPORTAN TODAS LAS CARACTERÍSTICAS DE CSS DISPONIBLES
+    <br>CSS dispone de tres versiones como principales o las más características:
+        <ul>
+        <li>CSS 1: Creada en 1996 - Propiedades fuentes, colores, alineaciones, etc.</li>
+        <li>CSS2 y CSS2.1: Creada en 1998 y 2005 respectivamente. Propiedades de posicionamiento así como 
+            <br>mejoras en la aplicación en ciertas etiquetas de HTML.
+        </li>
+        <li>CSS3: Creada desde el año 2011 hasta la actualidad*. Inserta funcionalidades varias que permiten
+            <br>utilizar CSS como un elemento fundamental para hacer páginas web dinámicas y más atractivas
+            <br> para los distintos dispositivos móviles existentes.
+            <br>*:Hoy en día, es más común utilizar CSS con las propiedas de animaciones, transiciones, transformaciones, etc.
+            <br> para hacer páginas web dinámicas, que utilizar lenguajes com JS (JavaScript) para realizar este tipo de funcionalidades.
+            <br>Desde hace unos años, ha surgido la idea de poder utilizar funciones y variables que se utilizan por lo general
+            <br>en lenguajes de programación, en CSS. Este tipo de acciones es lo que ha dado origen a la tecnología SASS.
+        </li>
+        </ul>
+        <h3>Ventajas y Desventajas de CSS</h3>
+        <h4>Ventajas de CSS</h4>
+        <ul>
+            <li>CSS nos permite un mayor control de la presentación del sitio web</li>
+            <li>Si necesitamos hacer modificaciones ede presentación en un documento web, al utilizar CSS
+                <br> sólo lo haríamos en un único documento/apartado y no tendríamos que ir modificando 
+                <br> el documento HTML parte por parte.
+            </li>
+            <li>Mayor Legilibilidad --> más fácil de interpretar y entender</li>
+            <li>Se reduce duplicidad de estilos en diferentes lugares: ahora tenemos todo más organizado
+                <br> y colocado que antes. Es mucho más fácil modificar y cambiar algo que cómo lo teníamos
+                <br>organizado anteriormente.
+            </li>
+            <li>Es más fácil crear distintas versiones de una página web y css para distintos dispositivos móviles</li>
+        </ul>
+        <h4>Desventajas de CSS</h4>
+        <ul>
+            <li>A veces, dependiendo del navegador web que utilicemos, la web se verá
+            <br>de una manera u otra...NO todos los navegadores soportan todas las etiquetas
+            <br>CSS disponibles.
+            </li>
+            <li>El uso de las tablas nos permitían hasta ahora crear diseño complejos de forma mucho
+                <br>más sencilla que si utilizáramos CSS... Ahora, para poder "centrar" una
+                <br>caja o texto, tenemos que "jugar" con los distintos elementos de CSS
+            </li>
+        </ul>
+        <h3>Cómo usar CSS en nuestras páginas web</h3>
+        Existen tres formas distintas de poder utilizar CSS en nuestras páginas web:
+        <ul style="color:darkcyan; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px;">
+            <li>CSS Externo: Linkeamos en la cabecera de nuestra página web (head),
+                <br>la ruta del documento .css que queremos aplicar a nuestra página.
+                <br>La estructuctura es la siguiente:
+                <br> link rel=stylesheet type=text/css href="ruta_archivo.css"
+            </li>
+            <li>CSS Interno:Dentro de la etiqueta head, se establecen etiquetas de apertura
+                <br>y cierre style, y dentro de estas, pondremos las características que queremos
+                <br>cambiar.
+            </li>
+            <li>CSS en Línea o Embebido: es el que se aplica directemente en la etiqueta que queremos modificar.
+                <br>Para ello, aplicaremos la etiqueta style dentro de la etiqueta HTML que queremos modificar,
+                <br> y le daremos las propiedades correspondientes.
+            </li>
+        </ul>
+        <h3>Cómo poner cometarios en CSS</h3>
+         Para poder poner comentarios en CSS, podemos utilizar la siguiente forma:
+         <ul>
+            <li>Para hacer comentarios de una sola línea o  de varias líneas: /*......*/ 
+                <br>Son para poder poner varias líneas de comentarios,
+                <br> y/o hacer una estructura de varios elementos que sean comentados.
+            </li>
+         </ul>
+    </body>
+    </html>
